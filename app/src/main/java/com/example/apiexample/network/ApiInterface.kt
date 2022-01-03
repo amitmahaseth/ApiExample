@@ -11,4 +11,10 @@ interface ApiInterface {
   fun registerData(@Field("email") email: String,@Field("password") password: String,
                    @Field("platform") platform: String,@Field("device_token") device_token: String):
           Call<Users>
+
+    @FormUrlEncoded
+  @POST("/api/v1/login")
+  fun loginData(@Field("email")email:String,@Field("password") password: String,
+                @Field("platform") platform: String,@Field("device_token")device_token: String):
+          Call<Users>
 }

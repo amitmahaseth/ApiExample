@@ -64,61 +64,50 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 />
-            <ImageView
-                android:id="@+id/show"
-                android:src="@drawable/show"
-                android:layout_width="@dimen/_30sdp"
-                android:layout_height="@dimen/_30sdp"
-
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_marginRight="@dimen/_30sdp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/edt_password"
-                />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card_cnfrm_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardElevation="@dimen/_10sdp"
-        app:cardCornerRadius="@dimen/_10sdp"
-        app:layout_constraintTop_toBottomOf="@+id/card_password"
-        android:layout_marginLeft="@dimen/_10sdp"
-        android:layout_marginRight="@dimen/_10sdp"
-        android:layout_marginTop="@dimen/_10sdp"
-        >
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/edt_cnfrm_password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Confirm Password"
-                android:background="@drawable/round_btn"
-                android:padding="@dimen/_10sdp"
-                android:maxLines="1"
-                android:stateListAnimator="@null"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                />
-            <ImageView
-                android:id="@+id/cnfrm_show"
-                android:src="@drawable/show"
-                android:layout_width="@dimen/_30sdp"
-                android:layout_height="@dimen/_30sdp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_marginRight="@dimen/_30sdp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/edt_cnfrm_password"
-                />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/card_cnfrm_password"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardElevation="@dimen/_10sdp"-->
+<!--        app:cardCornerRadius="@dimen/_10sdp"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/card_password"-->
+<!--        android:layout_marginLeft="@dimen/_10sdp"-->
+<!--        android:layout_marginRight="@dimen/_10sdp"-->
+<!--        android:layout_marginTop="@dimen/_10sdp"-->
+<!--        >-->
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/edt_cnfrm_password"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Confirm Password"-->
+<!--                android:background="@drawable/round_btn"-->
+<!--                android:padding="@dimen/_10sdp"-->
+<!--                android:maxLines="1"-->
+<!--                android:stateListAnimator="@null"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                />-->
+<!--            <ImageView-->
+<!--                android:id="@+id/cnfrm_show"-->
+<!--                android:src="@drawable/show"-->
+<!--                android:layout_width="@dimen/_30sdp"-->
+<!--                android:layout_height="@dimen/_30sdp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                android:layout_marginRight="@dimen/_30sdp"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/edt_cnfrm_password"-->
+<!--                />-->
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
     <Button
         android:id="@+id/btRegister"
         android:text="Register"
@@ -128,6 +117,18 @@
         android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginRight="@dimen/_10sdp"
         android:layout_marginLeft="@dimen/_10sdp"
-        app:layout_constraintTop_toBottomOf="@+id/card_cnfrm_password"/>
+        app:layout_constraintTop_toBottomOf="@+id/card_password"/>
+
+    <Button
+        android:id="@+id/btn_login1"
+        android:text="Log In"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_btn"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/btRegister"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

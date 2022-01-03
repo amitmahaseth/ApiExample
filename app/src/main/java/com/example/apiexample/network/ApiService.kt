@@ -12,6 +12,5 @@ object ApiService {
             .addConverterFactory(GsonConverterFactory.create())
             .baseUrl(BASE_URL)
             .build()
-
     }
 }
