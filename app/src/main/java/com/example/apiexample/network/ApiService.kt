@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object ApiService {
 
-    val BASE_URL=" https://api.findg.app"
+    val BASE_URL="https://jsonplaceholder.typicode.com/"
 
     fun getInstance(): Retrofit {
         return Retrofit.Builder()
