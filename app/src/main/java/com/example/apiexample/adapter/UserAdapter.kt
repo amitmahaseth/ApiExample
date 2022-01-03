@@ -7,10 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.apiexample.R
-import com.example.apiexample.model.UserDetails
-import com.example.apiexample.model.Users
+import com.example.apiexample.model.UserDataItem
 
-class UserAdapter(mContext:Context,val userList:ArrayList<UserDetails>):RecyclerView.Adapter<UserViewAdapter>() {
+
+class UserAdapter(baseContext: Context, val userList: ArrayList<UserDataItem>)
+    :RecyclerView.Adapter<UserViewAdapter>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserViewAdapter {
@@ -20,9 +21,9 @@ class UserAdapter(mContext:Context,val userList:ArrayList<UserDetails>):Recycler
 
     override fun onBindViewHolder(holder: UserViewAdapter, position: Int) {
 
-        holder.tv_userId.text=userList[position].username
+        holder.tv_userId.text=userList[position].userId.toString()
         holder.tv_id.text=userList[position].id.toString()
-        holder.title.text=userList[position].status.toString()
+        holder.title.text=userList[position].title
 
        return
     }
